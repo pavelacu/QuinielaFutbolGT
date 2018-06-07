@@ -11,6 +11,7 @@
         <style type="text/css">
             @import "<?= Front::myUrl('css/ie.css') ?>";
             @import "<?= Front::myUrl('css/layout.css') ?>";
+            @import "<?= Front::myUrl('css/tables.css') ?>";
         </style>
         <?php include_javascripts(); ?>
         <script type="text/javascript">

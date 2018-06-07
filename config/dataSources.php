@@ -15,10 +15,10 @@ $dataSources = array();
  * deben crearse tantas estructuras como datasource se requieran manejar
  */
 $dt1 = array("dbms" => "Mysql",
-    "host" => "zserver",
+    "host" => "localhost",
     "database" => "russia2018_db",
-    "user" => "root",
-    "pwd" => "delimce",
+    "user" => "quiniela",
+    "pwd" => "quiniela+123",
     "encrypt" => false
 );
 
