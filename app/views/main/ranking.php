@@ -16,23 +16,27 @@
             <img style="width: 130px; padding: 20px" onclick="location.replace('<?= Front::myUrl("main/index") ?>')" src="<?= Front::myUrl('images/zabivaka_full.png') ?>"></h1>
         </div>
         <div>
-            <table style="width: 400px; text-align: center" border="0" cellspacing="1" cellpadding="1">
+            <table  class="zebra" style="width: 400px; text-align: center" border="0" cellspacing="1" cellpadding="1">
                 <thead>
                     <tr>
+                        <th>#</th>
                         <th>Usuario</th>
                         <th>Puntos</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php while ($row = $lista->getRowFields()) { ?>
+                    <?php 
+                    	$i=1;
+							while ($row = $lista->getRowFields()) { ?>
                         <tr>
+                            <td><?php echo $i++; ?></td>
                             <td style="alignment-adjust: left"><?= $row->nombre ?></td>
                             <td><?= $row->puntos ?></td>
                         </tr>
-                        <tr>
+                        <!--tr>
                             <td></td>
                             <td></td>
-                        </tr>
+                        </tr-->
                     <?php } ?>
                 </tbody>
             </table>
