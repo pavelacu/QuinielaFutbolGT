@@ -18,7 +18,7 @@ function _posiciones_aciertos() {
       $db->executeQuery();
     
 
-    $data['siteTitle'] = Security::getSessionVar("TITTLE").' Posiciones de la Polla';
+    $data['siteTitle'] = Security::getSessionVar("TITTLE").' Tabla de Posiciones';
     $data['body'][] = View::do_fetch(VIEW_PATH . 'main/ranking_hits.php', array("lista" => $db,"ronda"=>$rondaName));
     View::do_dump(LAYOUT_PATH . 'layout.php', $data);
     
