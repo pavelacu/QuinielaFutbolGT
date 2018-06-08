@@ -9,7 +9,7 @@
         <table align="center" class="zebra" border="0" style="text-align: center; width: 450px;" cellspacing="1" cellpadding="1" >
 
             <tr>
-                <th colspan="7"> Expectativa</th>
+                <th colspan="7"> Expectativa</th>                
                 <th colspan="7"> Realidad</th>
                 <th> Puntos </th>
             </tr>
@@ -31,7 +31,7 @@
 
                 <?php
                 if ($fecha2 != $fechatemp) {
-                    echo "<tr><td colspan='6'><p><b>Jornada: $fecha2<b></p></td></tr>";
+                    echo "<tr><td colspan='15'><p><b>Jornada: $fecha2<b></p></td></tr>";
                     $fechatemp = $fecha2;
                 }
                 ?>
@@ -45,12 +45,12 @@
                     <td><?= $row->marcador2 ?></td>                    
                     <td><img src="<?= Front::myUrl('images/band/' . $bandera2) ?>"></td>
                     <td style="text-align: left"><?= utf8_encode($nombre2) ?></td>                    
-                    <td/>
+
                     <td style="text-align: right"><?= utf8_encode($nombre1) ?></td>
                     <td><img src="<?= Front::myUrl('images/band/' . $bandera1) ?>"></td>
-                    <td>(<?= $row->real1 ?>)</td>                    
+                    <td><?= $row->real1 ?></td>                    
                     <td><b>Vs</b></td>                    
-                    <td>(<?= $row->real2 ?>)</td>
+                    <td><?= $row->real2 ?></td>
                     <td><img src="<?= Front::myUrl('images/band/' . $bandera2) ?>"></td>
                     <td style="text-align: left"><?= utf8_encode($nombre2) ?></td>
 
