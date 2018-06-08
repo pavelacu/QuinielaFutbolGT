@@ -70,7 +70,7 @@ class FactoryDao {
                 where up.ronda_id = $ronda 
                 GROUP BY
                 u.id
-                order by puntos, aciertos desc";
+                order by puntos desc, aciertos desc";
     }
     
     
