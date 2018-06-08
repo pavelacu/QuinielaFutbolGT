@@ -88,7 +88,7 @@
 
             <br>
             <input id="submit" type="submit" value="Entrar" style="width:80px;" class="alt_btn">
-            <button id="registro" style="width:80px;" class="alt_btn">Registrate!!</button>
+            <?php // <button id="registro" style="width:80px;" class="alt_btn">Registrate!!</button> ?>
         </div>
         <footer>
             <div style="margin-top:8px;" align="center">
