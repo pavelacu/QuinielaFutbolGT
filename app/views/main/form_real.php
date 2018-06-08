@@ -10,7 +10,7 @@
 
             <tr>
                 <th colspan="7"> Expectativa</th>                
-                <th colspan="7"> Realidad</th>
+                <th colspan="7" style="text-align: right;"> Realidad</th>
                 <th> Puntos </th>
             </tr>
             <?php
