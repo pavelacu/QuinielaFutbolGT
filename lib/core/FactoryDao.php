@@ -55,6 +55,23 @@ class FactoryDao {
                 u.id
                 order by puntos desc";
     }
+
+
+    static public function getRankingHits($ronda) {
+
+        return "SELECT
+                concat(u.nombre,' (',u.contacto,')') as nombre,
+                sum(up.puntaje) as puntos, 
+                (select count(up1.puntaje) from usuario_partido up1 where up1.usuario_id = u.id and up1.puntaje = 5  ) 
+                as aciertos
+                FROM
+                usuario AS u
+                INNER JOIN usuario_partido AS up ON up.usuario_id = u.id
+                where up.ronda_id = $ronda 
+                GROUP BY
+                u.id
+                order by puntos desc";
+    }
     
     
      static public function getMatchesToday($ronda,$fecha) {
