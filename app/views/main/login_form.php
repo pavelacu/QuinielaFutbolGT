@@ -92,7 +92,7 @@
         </div>
         <footer>
             <div style="margin-top:8px;" align="center">
-                ©&nbsp;<?= date("Y") . " Disfruta del mundial con tus panas" ?> 
+                ©&nbsp;<?= date("Y") . " Disfruta del mundial con tus cuates" ?> 
             </div>
         </footer>
 
