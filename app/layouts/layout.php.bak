@@ -36,7 +36,7 @@
         <header id="header">
 
             <div style="float: end" class="opcion_user">
-                <p class="user_name"><?= Security::getUserName() ?> [U<?= Security::getUserID() ?>01]</p>
+                <p class="user_name"><?= Security::getUserName() ?></p>
                 <p class="logout_user"><a href="<?= Front::myUrl('main/logout') ?>">Cerrar</a></p>
             </div>
 
