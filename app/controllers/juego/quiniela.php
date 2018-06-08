@@ -1,6 +1,6 @@
 <?php
 
-function _polla() {
+function _quiniela() {
 
     Security::sessionActive();
 

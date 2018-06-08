@@ -1,6 +1,6 @@
 <?php
 
-function _posiciones() {
+function _posiciones_aciertos() {
 
     Security::sessionActive();
 
@@ -19,7 +19,7 @@ function _posiciones() {
     
 
     $data['siteTitle'] = Security::getSessionVar("TITTLE").' Posiciones de la Polla';
-    $data['body'][] = View::do_fetch(VIEW_PATH . 'main/ranking.php', array("lista" => $db,"ronda"=>$rondaName));
+    $data['body'][] = View::do_fetch(VIEW_PATH . 'main/ranking_hits.php', array("lista" => $db,"ronda"=>$rondaName));
     View::do_dump(LAYOUT_PATH . 'layout.php', $data);
     
     $db->close();
