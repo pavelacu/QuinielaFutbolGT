@@ -9,7 +9,7 @@
         <table align="center" border="0" style="text-align: center; width: 350px">
 
             <tr>
-                <th colspan="7"> Espectativa</th>
+                <th colspan="7"> Expectativa</th>
                 <th colspan="7"> Realidad</th>
                 <th> Puntos </th>
             </tr>
