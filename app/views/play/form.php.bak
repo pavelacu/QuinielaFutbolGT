@@ -23,11 +23,6 @@
         });
 
 
- 				$("#imprimir").click(function() {
-
-						window.print();
-            return false;
-        });
 
 
     });
@@ -80,7 +75,7 @@
             <tr><td colspan='6'>
                     <div style="text-align: center; margin-top: 14px; width: auto">
                         <input id="submit" type="submit" value="Guardar" style="width:80px;" class="alt_btn">
-                        <button id="imprimir" style="width:80px;" class="alt_btn">Imprimir</button>
+                        <button id="registro" style="width:80px;" class="alt_btn">Imprimir</button>
                     </div>
                     <div id="mensaje"></div>
                 </td>
