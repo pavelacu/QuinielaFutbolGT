@@ -7,6 +7,12 @@
     <span style="text-height: 30px">Fecha actual: <b><?= $fecha ?></b></span>
     <form name="form1" id="form1">
         <table align="center" border="0" style="text-align: center; width: 350px">
+
+            <tr>
+                <th colspan="7"> Espectativa</th>
+                <th colspan="7"> Realidad</th>
+                <th> Puntos </th>
+            </tr>
             <?php
             $fechatemp = "";
             
@@ -33,14 +39,21 @@
 
                 <tr>
                     <td style="text-align: right"><?= utf8_encode($nombre1) ?></td>
-                    <td><img src="<?= Front::myUrl('images/band/' . $bandera1) ?>"></td>
-                    <td>(<?= $row->real1 ?>)</td>
+                    <td><img src="<?= Front::myUrl('images/band/' . $bandera1) ?>"></td>                    
                     <td><?= $row->marcador1 ?></td>
                     <td><b>Vs</b></td>
-                    <td><?= $row->marcador2 ?></td>
+                    <td><?= $row->marcador2 ?></td>                    
+                    <td><img src="<?= Front::myUrl('images/band/' . $bandera2) ?>"></td>
+                    <td style="text-align: left"><?= utf8_encode($nombre2) ?></td>                    
+
+                    <td style="text-align: right"><?= utf8_encode($nombre1) ?></td>
+                    <td><img src="<?= Front::myUrl('images/band/' . $bandera1) ?>"></td>
+                    <td>(<?= $row->real1 ?>)</td>                    
+                    <td><b>Vs</b></td>                    
                     <td>(<?= $row->real2 ?>)</td>
                     <td><img src="<?= Front::myUrl('images/band/' . $bandera2) ?>"></td>
                     <td style="text-align: left"><?= utf8_encode($nombre2) ?></td>
+
                     <td><b><?= $row->puntaje ?></b></td>
                 </tr>
             <?php } ?>            

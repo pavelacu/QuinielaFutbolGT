@@ -93,7 +93,7 @@
             </fieldset>
             
             <fieldset>
-                <label for="r0contacto">Contacto: (empresa, grupo, etc)</label>
+                <label for="r0contacto">Telefono: </label>
                 <input id="r0email" name="r0contacto" value="">
             </fieldset>
 
