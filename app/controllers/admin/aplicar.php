@@ -47,9 +47,10 @@ function calcularPuntaje($r1, $r2, $u1, $u2) {
         $puntos = 3;
     } else if (($r1 == $r2) && ($u1 == $u2)) { ///acierto empate
         $puntos = 3;    
-    } else if (($r1 == $u1) or ($r2 == $u2)) { ///acierta un marcador
-        $puntos = 1;
     }
+    /* else if (($r1 == $u1) or ($r2 == $u2)) { ///acierta un marcador
+        $puntos = 1;
+    }*/
 
     return $puntos;
 }
