@@ -42,6 +42,31 @@ class FactoryDao {
             ";
     }
 
+    static public function getMatchesVrsReal($ronda, $usuario) {
+
+        return "SELECT
+            (select concat(e.nombre,'_',e.bandera) from equipo e where e.id = p.equipo1_id) AS e1,
+            (select concat(e.nombre,'_',e.bandera) from equipo e where e.id = p.equipo2_id) AS e2,
+            p.fecha,
+            date_format(p.fecha,'%d/%m') as fecha2,
+            up.marcador1,
+            up.marcador2,
+            p.equipo1_id,
+            p.equipo2_id,
+            p.marcador1 real1,
+            p.marcador2 real2,
+            up.puntaje,
+            p.id as idp
+            FROM
+            partido AS p
+            LEFT JOIN usuario_partido AS up ON (up.partido_id = p.id and up.usuario_id = $usuario)
+            WHERE
+            p.ronda_id = $ronda and p.marcador1 is not null and p.marcador2 is not null
+            ORDER BY
+            p.fecha ASC
+            ";
+    }    
+
     static public function getRanking($ronda) {
 
         return "SELECT
