@@ -94,7 +94,9 @@
             <div style="margin-top:8px;" align="center">
                 ©&nbsp;<?= date("Y") . " Disfruta del mundial con tus cuates" ?> 
             </div>
+            <br/>
             <p>Solicita tu ingreso con Alvaro <a href="mailto:alvaro.navichoque@claro.com.gt">alvaro.navichoque@claro.com.gt</a></p>
+            <p>Prueba la aplicacion, con el usuario: <b>demo</b> y contraseña: <b>demodemo</b></p>
         </footer>
 
 
