@@ -9,8 +9,7 @@
         <table align="center" class="zebra" border="1" style="text-align: center; width: 600px;" cellspacing="1" cellpadding="1" >
 
             <tr>
-                <th> Expectativa</th>                
-                <th> Realidad</th>
+                <th> Pronostico</th>                                
                 <th> Puntos </th>
             </tr>
             <?php
@@ -45,16 +44,7 @@
                     <?= $row->marcador2 ?>
                     <img src="<?= Front::myUrl('images/band/' . $bandera2) ?>">
                     <?= utf8_encode($nombre2) ?>                   
-                                        </td>
-                    <td ><?= utf8_encode($nombre1) ?>
-                    <img src="<?= Front::myUrl('images/band/' . $bandera1) ?>">
-                    <?= $row->real1 ?>
-                    <b>-</b>                
-                    <?= $row->real2 ?>
-                    <img src="<?= Front::myUrl('images/band/' . $bandera2) ?>">
-                    <?= utf8_encode($nombre2) ?>
-                    </td>
-
+                                        </td> 
                     <td><b><?= $row->puntaje ?></b></td>
                 </tr>
             <?php } ?>            
