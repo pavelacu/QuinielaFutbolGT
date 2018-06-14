@@ -31,7 +31,8 @@ class FactoryDao {
             up.marcador2,
             p.equipo1_id,
             p.equipo2_id,
-            p.id as idp
+            p.id as idp,
+            up.puntaje
             FROM
             partido AS p
             LEFT JOIN usuario_partido AS up ON (up.partido_id = p.id and up.usuario_id = $usuario)

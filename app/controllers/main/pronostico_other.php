@@ -4,6 +4,7 @@ function _pronostico_other() {
 
     Security::sessionActive();
     $player = $_POST["player"];
+    $name_player = $_POST["name_player"];
     //Security::getUserProfileName()
 	 
     $rondaID = Security::getSessionVar("RONDA");
@@ -20,7 +21,7 @@ function _pronostico_other() {
     $db->executeQuery();
 
     $data['siteTitle'] = Security::getSessionVar("TITTLE") . 'La Quiniela';
-    $data['body'][] = View::do_fetch(VIEW_PATH . 'main/form_other.php', array("partidos" => $db, "ronda" => $rondaName, "fecha" => $fechaActual));
+    $data['body'][] = View::do_fetch(VIEW_PATH . 'main/form_other.php', array("partidos" => $db, "ronda" => $rondaName, "fecha" => $fechaActual, "name_player" => $name_player));
     View::do_dump(LAYOUT_PATH . 'layout.php', $data);
 
     $db->close();

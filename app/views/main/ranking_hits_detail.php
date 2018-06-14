@@ -36,8 +36,8 @@
                             <td><?= $row->puntos ?></td>
                             <td><?= $row->aciertos ?></td>
                             <td><form action="pronostico_other" method ="POST">                                 
-                                    <input type="hidden" value =<?= $row->id ?> name ="player" id="player" />
-                                    <input type="hidden" value =<?= $row->nombre ?> name ="name_player" id="name_player" />
+                                    <input type="hidden" value ="<?= $row->id ?>" name ="player" id="player" />
+                                    <input type="hidden" value ="<?= $row->nombre ?>" name ="name_player" id="name_player" />
                                     <input type="submit" value="Ver"/>
                                 </form>
                             </td>
