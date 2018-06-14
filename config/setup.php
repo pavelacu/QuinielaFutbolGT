@@ -20,7 +20,7 @@ define("WEB_DOMAIN", 'http://zserver'); //with http:// and NO trailing slash pls
 define("VIEW_PATH", 'app/views/'); //with trailing slash pls
 define("LAYOUT_PATH", 'app/layouts/'); //with trailing slash pls
 
-define("AV_defaultTimeZone","America/Caracas"); //////zona horaria por defecto para la aplicacion
+define("AV_defaultTimeZone","America/Guatemala"); //////zona horaria por defecto para la aplicacion
 define("AV_defaultDs", "russia"); /////Data source por defecto. segun los data sources creados en el archivo dataSources.php
 define("AV_noDsFound", "DataSource doesn't exist!");
 
