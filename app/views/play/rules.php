@@ -10,6 +10,7 @@
                 <li>Se premiaran 1ero(70%) , 2do(20%) y 3er Lugar(10%). (% De lo recaudado)</li>
                 <li>En caso de empate en punteo, se considera la cantidad de aciertos exactos. </li>
                 <li>Cierre de Inscripcion 13/06/2018 11:00 hrs. </li>
+                <li>Si se comparten los puntos en los primeros lugares se consideran los aciertos de marcador, corriendo los demas lugares.</li>
             </ul>
         </div>
         <p><a href="javascript:history.back();">regresar</a></p>
