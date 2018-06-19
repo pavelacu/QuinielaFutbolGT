@@ -3,6 +3,7 @@
     <div style="float: left">
         <img style="width: 130px; padding: 20px" onclick="location.replace('<?= Front::myUrl("main/index") ?>')" src="<?= Front::myUrl('images/zabivaka_full.png') ?>"></h1>
     </div>
+    <h2><?= $name_player ?></h2>
     <span style="text-height: 30px"><?= $ronda ?></span><br>
     <span style="text-height: 30px">Fecha actual: <b><?= $fecha ?></b></span>
     <form name="form1" id="form1">
